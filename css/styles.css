@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --main-green: hsl(158, 36%, 37%);
+    --dark-green: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 14px;
+    background: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+}
+
+body img {
+    max-width: 100%;
+}
+
+.main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 2rem 1.2rem;
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content .main-header h3 {
+    margin: 1.2rem;
+    font-size: 0.8rem;
+    color: var(--grey);
+    font-weight: 500;
+}
+
+.content .main-header h1 {
+    font-family: 'Fraunces', serif;
+    text-align: left;
+    margin: 0rem 1.2rem;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.content .main-content p {
+    margin: 1.2rem;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.content .pricing-flex {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;  
+}
+
+.content .main-pricing {
+    margin-left: 1.2rem;
+}
+
+.content .main-pricing h2 {
+    font-family: 'Fraunces';
+    color: var(--main-green);
+    font-size: 2.5rem;
+}
+
+.content .main-pricing sup {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+.content .cart-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content .cart {
+    margin: 1.5rem;
+    padding: 1.3rem;
+    border-radius: 10px;
+    background: var(--main-green);
+}
+
+.content .cart a {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.content .cart:hover {
+   cursor: pointer;
+   background: var(--dark-green);
+}
+
+@media (min-width:768px) {
+  .main-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .content {
+    display: flex;
+  }
+
+  .main-img, .hero {
+    flex: 1;
+  }
+
+  .content .main-header h3 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .content .main-img img {
+    display: block;
+  }
+
+  .content .main-header h1 {
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+
+  .content .main-content p {
+    margin-left: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .content .main-pricing {
+    margin-left: 2rem;
+  }
+
+  .content .main-pricing h2 {
+    font-size: 1.8rem;
+  }
+
+  .content .main-pricing sup {
+    font-size: 0.8rem;
+  }
+
+  .content .cart {
+    padding: 0.8rem;
+  }
+
+  .content .cart a {
+    font-size: 0.9rem;
+  }
+  
+}
+
+
+/* Footer */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
